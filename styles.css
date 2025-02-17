@@ -1,0 +1,23 @@
+.container {
+    width: 900px;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.pixel {
+    flex-basis: calc(100% / var(--grid-size) - 10px);
+    height: calc(100% / var(--grid-size) - 10px);
+    background-color: orange;
+    border: 1px solid black;
+    margin: 2px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
